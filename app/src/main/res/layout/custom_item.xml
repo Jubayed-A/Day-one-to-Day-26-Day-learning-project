@@ -11,7 +11,7 @@
 
    
 // this is image view
-
+// for shapable image view 
 
  <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imgProfile"
