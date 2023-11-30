@@ -9,7 +9,11 @@
 
     >
 
-    <com.google.android.material.imageview.ShapeableImageView
+   
+// this is image view
+// for shapable image view 
+
+ <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imgProfile"
         android:layout_width="110dp"
         android:layout_height="110dp"
