@@ -1,18 +1,227 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="This is the project for One to 26 Days"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:padding="20dp"
+        android:layout_margin="10dp"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!--    First Section   -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        >
+        <!--    This is first card view    -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="25dp"
+            android:id="@+id/RecyclerViewCard"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="List View"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <!--    This is Second card view    -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="2dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Recycler View"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        
+    </LinearLayout>
+
+    <!--    Second Section   -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        >
+        <!--    This is first card view    -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="25dp"
+            android:id="@+id/webView"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Web View"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <!--    This is Second card view    -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="2dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <!--    Third Section   -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        >
+        <!--    This is first card view    -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="25dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <!--    This is Second card view    -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="2dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>
