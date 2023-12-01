@@ -1,10 +1,12 @@
 package com.example.allinoneproject
 
+import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.WindowInsetsController
+import android.widget.TextView
 
 class LogInActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,6 +23,13 @@ class LogInActivity : AppCompatActivity() {
         } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             // For versions prior to Android 11 (API level 30)
             window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
+        }
+
+        // new intent signUp activity
+        val signUp = findViewById<TextView>(R.id.noAccount)
+        signUp.setOnClickListener {
+            val intentSignUp = Intent(this, SignUpActivity::class.java)
+            startActivity(intentSignUp)
         }
 
     }
