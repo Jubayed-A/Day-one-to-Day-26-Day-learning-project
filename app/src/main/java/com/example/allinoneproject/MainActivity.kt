@@ -25,12 +25,20 @@ class MainActivity : AppCompatActivity() {
             window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
         }
 
+        // initialized variable
         val cardWebView = findViewById<CardView>(R.id.webView)
+        val cardLogIn = findViewById<CardView>(R.id.cardLogIn)
 
         // webView cardView
         cardWebView.setOnClickListener {
             val intentWeb = Intent(this, WebViewActivity::class.java)
             startActivity(intentWeb)
+        }
+
+        // logIn cardView code here
+        cardLogIn.setOnClickListener {
+            val intentLogIn = Intent(this, LogInActivity::class.java)
+            startActivity(intentLogIn)
         }
 
     }

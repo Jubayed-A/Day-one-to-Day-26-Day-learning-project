@@ -42,7 +42,7 @@ class WebViewActivity : AppCompatActivity() {
         webView?.apply {
             settings.javaScriptEnabled = true
             settings.safeBrowsingEnabled = true
-            loadUrl("https://jubayed-a.github.io/Portfolio-Website/")
+            loadUrl("https://github.com/Jubayed-A")
         }
     }
 }
