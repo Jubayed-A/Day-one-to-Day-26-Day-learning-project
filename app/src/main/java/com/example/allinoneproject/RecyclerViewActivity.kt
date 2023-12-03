@@ -25,8 +25,5 @@ class RecyclerViewActivity : AppCompatActivity() {
         productArrayList = arrayListOf<Product>()
 
 
-
-
-
     }
 }
