@@ -29,7 +29,7 @@
         android:weightSum="2">
         <!--    This is first card view    -->
         <androidx.cardview.widget.CardView
-            android:id="@+id/RecyclerViewCard"
+            android:id="@+id/cardListView"
             android:layout_width="150dp"
             android:layout_height="110dp"
             android:layout_marginTop="2dp"
@@ -61,6 +61,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="150dp"
             android:layout_height="110dp"
+            android:id="@+id/cardRecyclerView"
             android:layout_marginStart="2dp"
             android:layout_marginTop="2dp"
             android:layout_marginBottom="2dp"
@@ -168,6 +169,7 @@
         android:weightSum="2">
         <!--    This is first card view    -->
         <androidx.cardview.widget.CardView
+            android:id="@+id/cardPhotoFrame"
             android:layout_width="150dp"
             android:layout_height="110dp"
             android:layout_marginTop="2dp"
@@ -197,6 +199,7 @@
 
         <!--    This is Second card view    -->
         <androidx.cardview.widget.CardView
+            android:id="@+id/cardContactManager"
             android:layout_width="150dp"
             android:layout_height="110dp"
             android:layout_marginStart="2dp"

@@ -28,6 +28,10 @@ class MainActivity : AppCompatActivity() {
         // initialized variable
         val cardWebView = findViewById<CardView>(R.id.webView)
         val cardLogIn = findViewById<CardView>(R.id.cardLogIn)
+        val cardList = findViewById<CardView>(R.id.cardListView)
+        val cardRecycler = findViewById<CardView>(R.id.cardRecyclerView)
+        val cardPhoto = findViewById<CardView>(R.id.cardPhotoFrame)
+        val cardContact = findViewById<CardView>(R.id.cardContactManager)
 
         // webView cardView
         cardWebView.setOnClickListener {
